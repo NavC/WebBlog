@@ -14,7 +14,10 @@ namespace WebBlog
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
             //defaults help secifiy controller and actions
-            routes.MapRoute("Home", "", new { controller = "Posts", actions = "index" });
+
+                                      //URL
+            routes.MapRoute( "Login", "login", new { controller = "Auth", action = "Login" });
+            routes.MapRoute( "Home", "", new { controller = "Posts", action = "index"});
 
             //routes.MapRoute(
             //    name: "Default",

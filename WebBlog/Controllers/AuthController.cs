@@ -6,12 +6,11 @@ using System.Web.Mvc;
 
 namespace WebBlog.Controllers
 {
-    public class PostsController : Controller
+    public class AuthController : Controller
     {
-
-        public ActionResult Index()
+        public ActionResult Login()
         {
-            return Content("Hello, Randy!");
+            return Content("Login");
         }
     }
 }
