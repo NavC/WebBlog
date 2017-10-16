@@ -11,7 +11,7 @@ namespace WebBlog.Controllers
 
         public ActionResult Index()
         {
-            return Content("Hello, Randy!");
+            return View();
         }
     }
 }
