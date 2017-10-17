@@ -8,13 +8,25 @@
 <html>
     <head>
         <meta name="viewport" content="width=device-width" />
-        <title>_Layout</title>
+        <title>@ViewBag.Title - WebBlog</title>
     </head>
+
     <body>
         <header>
-            <h1>Simple Blog</h1>
+            <a href="@Url.RouteUrl("home")">Simple Blog</a>
         </header>
+
+        <a href="@Url.RouteUrl("login")">Login Page</a>
+
         <!--INSERT VIEW HERE!-->
         @RenderBody()
+
+        <footer>
+            &copy; @DateTime.UtcNow.Year
+        </footer>
+
+        @RenderSection("Scripts", false);
+
     </body>
+
 </html>
